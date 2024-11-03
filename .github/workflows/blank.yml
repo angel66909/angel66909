@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:release/*
+    branches: [ "main" ]
+  pull_request: 
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 02**1-5
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  # This workflow contains a single job called "build"
+ jobs:
+ my_job:
+ name: deploy to staging  
+   runs-on: windows-19
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps: request for encrypted messages 
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: .Netcore SDK
+
+      # Runs a single command using the runners shell
+      - name: Setup 
+      run: npm install
+      npm run build--if-present
+      npm test
+      # Runs a set of commands using the runners shell
+      with:${{ matrix.node_
+      steps:
+      -run: npm publish 
+      if: github.event_name == 'push'
+      node-version: '20.x'
+      
